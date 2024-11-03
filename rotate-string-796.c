@@ -23,5 +23,6 @@ bool rotateString(char* s, char* goal) {
   strcat(concatinated, s);
   strcat(concatinated, s);
 
+  // Returns pointer to first index of substring
   return strstr(concatinated, goal) != NULL;
 }
