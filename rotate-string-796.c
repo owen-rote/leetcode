@@ -2,6 +2,8 @@
 Leetcode #796 Rotate String
 https://leetcode.com/problems/rotate-string/description/
 3 November 2024
+Time Complexity: O(n)
+Space Complexit: O(n)
 */
 
 #include <stdbool.h>
