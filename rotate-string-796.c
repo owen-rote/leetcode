@@ -3,7 +3,7 @@ Leetcode #796 Rotate String
 https://leetcode.com/problems/rotate-string/description/
 3 November 2024
 Time Complexity: O(n)
-Space Complexit: O(n)
+Space Complexity: O(n)
 */
 
 #include <stdbool.h>
@@ -18,9 +18,9 @@ bool rotateString(char* s, char* goal) {
   }
 
   char concatinated[length * 2 + 1];
-  
+
   // Declare as empty string to ignore garbage values when declaring
-  concatinated[0] ='\0';
+  concatinated[0] = '\0';
 
   strcat(concatinated, s);
   strcat(concatinated, s);

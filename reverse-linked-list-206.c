@@ -3,7 +3,7 @@ Leetcode #206 Reverse Linked List
 https://leetcode.com/problems/reverse-linked-list/
 4 November 2024
 Time Complexity: O(n)
-Space Complexit: O(1)
+Space Complexity: O(1)
 */
 
 #include <stdio.h>
