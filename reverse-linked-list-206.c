@@ -27,6 +27,7 @@ struct ListNode* reverseList(struct ListNode* head) {
       head = right;
       continue;
     }
+    // Go through forward and switch the pointer to previous
     struct ListNode* temp = right->next;
     right->next = left;
     left = right;
