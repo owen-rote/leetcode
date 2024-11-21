@@ -26,7 +26,7 @@ bool searchMatrix(int** matrix, int rows, int* columns, int target) {
       break;
     }
   }
-  
+
   // Left to right binary search =========================
   l = 0;
   r = *columns - 1;
