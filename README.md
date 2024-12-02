@@ -1,3 +1,3 @@
-# My LeetCode Solution Repo
+# Owen's LeetCode Solution Repo
 
-### Here, I post some of my most interesting LeetCode problem solutions, mainly C ones.
+#### Here, I store some of my favorite LeetCode problem solutions, mainly C ones.
