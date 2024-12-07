@@ -29,7 +29,7 @@ class Solution:
         # deque of tuple (i, board, length)
         queue = deque([(board.index("0"), board, 0)])
 
-        visited = set([board]) 
+        visited = set([board])
 
         # BFS of all possible sliding options for 0
         while queue:
@@ -47,7 +47,7 @@ class Solution:
                 new_board_array[j] = board_array[i]
 
                 new_board = "".join(new_board_array)
-                
+
                 if new_board not in visited:
                     queue.append((j, new_board, length + 1))
                     visited.add(new_board)

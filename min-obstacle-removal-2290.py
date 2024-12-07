@@ -9,6 +9,7 @@ This solution uses Dijkstra's algorithm
 
 import heapq
 
+
 class Solution:
     def minimumObstacles(self, grid: list[list[int]]) -> int:
         ROWS = len(grid)
