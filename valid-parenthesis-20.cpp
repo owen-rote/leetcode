@@ -10,33 +10,33 @@ Space Complexity: O(n)
 #include <string>
 
 bool isValid(std::string s) {
-  std::stack<char> stack;
-  stack.push(s[0]);
-  for (int i = 1; i < s.length(); ++i) {
-    // Check ()
-    if (s[i] == ')') {
-      if (!stack.empty() && stack.top() == '(') {
-        stack.pop();
-      } else {
-        return false;
-      }
-      // Check []
-    } else if (s[i] == ']') {
-      if (!stack.empty() && stack.top() == '[') {
-        stack.pop();
-      } else {
-        return false;
-      }
-      // Check {}
-    } else if (s[i] == '}') {
-      if (!stack.empty() && stack.top() == '{') {
-        stack.pop();
-      } else {
-        return false;
-      }
-    } else {
-      stack.push(s[i]);
+    std::stack<char> stack;
+    stack.push(s[0]);
+    for (int i = 1; i < s.length(); ++i) {
+        // Check ()
+        if (s[i] == ')') {
+            if (!stack.empty() && stack.top() == '(') {
+                stack.pop();
+            } else {
+                return false;
+            }
+            // Check []
+        } else if (s[i] == ']') {
+            if (!stack.empty() && stack.top() == '[') {
+                stack.pop();
+            } else {
+                return false;
+            }
+            // Check {}
+        } else if (s[i] == '}') {
+            if (!stack.empty() && stack.top() == '{') {
+                stack.pop();
+            } else {
+                return false;
+            }
+        } else {
+            stack.push(s[i]);
+        }
     }
-  }
-  return stack.empty();
+    return stack.empty();
 }
