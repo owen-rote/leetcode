@@ -9,9 +9,7 @@ This code doesn't work. TODO!!
 
 
 class Solution:
-    def countUnguarded(
-        self, m: int, n: int, guards: list[list[int]], walls: list[list[int]]
-    ) -> int:
+    def countUnguarded(self, m: int, n: int, guards: list[list[int]], walls: list[list[int]]) -> int:
         count = m * n
         matrix = [[0 for col in range(n)] for row in range(m)]
 
