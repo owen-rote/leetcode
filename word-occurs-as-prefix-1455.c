@@ -7,33 +7,33 @@ Space Complexity: O(1)
 */
 
 int isPrefixOfWord(char* sentence, char* searchWord) {
-  int i = 0;
-  int j = 0;
-  int wordCount = 1;
+    int i = 0;
+    int j = 0;
+    int wordCount = 1;
 
-  while (sentence[i] != '\0') {
-    if (sentence[i] == searchWord[j]) {
-      ++i;
-      ++j;
+    while (sentence[i] != '\0') {
+        if (sentence[i] == searchWord[j]) {
+            ++i;
+            ++j;
 
-      if (searchWord[j] == '\0') {
-        return wordCount;
-      }
+            if (searchWord[j] == '\0') {
+                return wordCount;
+            }
 
-    } else {
-      while (sentence[i] != ' ' && sentence[i] != '\0') {
-        // Skip current word
-        ++i;
-      }
+        } else {
+            while (sentence[i] != ' ' && sentence[i] != '\0') {
+                // Skip current word
+                ++i;
+            }
 
-      if (sentence[i] == ' ') {
-        // Put i at start of next word
-        ++i;
-      }
-      ++wordCount;
-      j = 0;
+            if (sentence[i] == ' ') {
+                // Put i at start of next word
+                ++i;
+            }
+            ++wordCount;
+            j = 0;
+        }
     }
-  }
 
-  return -1;
+    return -1;
 }
